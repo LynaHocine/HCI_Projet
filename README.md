@@ -1,5 +1,5 @@
 <div align="center">
-# Blog Projet IHM 2026
+Blog Projet IHM 2026
 </div>
 
 ---
