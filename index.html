@@ -54,31 +54,26 @@
                 </div>
             </section>
        
-            <section>
+            <section class="card">
                 <h2>Use scenario</h2>
+
+                <p><b>Lieu :</b> Paris (République) à 14h</p>
+                <p><b>Date :</b> 1er mai</p>
+                <p><b>Contexte :</b> Manifestation nationale pour les droits des travailleurs</p>
+
+                <h3>Avant la manifestation</h3>
+                <p><b>Philippe :</b> A appris l'existence de la manifestation 2 jours plus tôt en discutant avec un collègue lors de la pause déjeuner. Son collègue lui a indiqué la date et l'heure mais pas plus. Avant de partir, il consulte Google Maps pour vérifier comment se rendre à République, mais il ne sait pas si certaines stations seront fermées.</p>
+                <p><b>Camille :</b> Sort de son travail. Elle a vu l'information de la manifestation sur les réseaux sociaux.</p>
+
+                <h3>Pendant la manifestation</h3>
+                <p><b>Camille :</b> En arrivant, elle cherche des amies qu'elle doit rejoindre. Ils lui ont dit qu'ils sont près de la statue, mais la place est bondée. Elle essaie de les repérer en suivant leur localisation sur son téléphone, mais la densité de la foule rend la mission difficile.</p>
+                <p><b>Philippe :</b> Des tensions apparaissent près d'un carrefour. Le cortège ralentit fortement. Il ne comprend pas ce qui se passe à l'avant. Il remarque un groupe de policiers en tenue anti-émeute bloquant la rue. Autour de lui, les manifestants ralentissent, certains reculent. Il ne sait pas si la situation est tendue et hésite à continuer d'avancer.</p>
+                <p><b>Camille :</b> Se sent un peu stressée par l'ambiance. Elle essaie de trouver la station de métro la plus proche encore ouverte, mais l'itinéraire proposé passe par une rue inaccessible.</p>
+                <p><b>Lola :</b> Reçoit des informations contradictoires : certains disent qu'une sortie est sécurisée ; d'autres indiquent qu'elle est à éviter. Elle essaie d'appeler et d'envoyer des messages pour en savoir plus mais a du mal à avoir une vision globale fiable de la situation.</p>
+                <p>Une personne fait un malaise dans la foule. Les gens cherchent de l'aide à voix haute. Lola tente de contacter quelqu'un de son équipe, mais le bruit et la densité rendent la communication difficile.</p>
+                <p>Pendant plusieurs minutes, la situation est gérée de manière improvisée par les manifestants eux-mêmes.</p>
             </section>
-            
 
         </main>
-        <script>
-            const modal = document.getElementById("imageModal");
-            const modalImg = document.getElementById("modalImage");
-            const closeBtn = modal.querySelector(".close");
-
-            // Ajoute l’effet click sur toutes les images de la galerie
-            document.querySelectorAll(".interaction-images img").forEach(img => {
-                img.addEventListener("click", () => {
-                    modal.style.display = "block";
-                    modalImg.src = img.src;
-                });
-            });
-
-            // Ferme le modal si on clique sur le fond ou sur la croix
-            modal.addEventListener("click", (e) => {
-                if (e.target === modal || e.target === closeBtn) {
-                    modal.style.display = "none";
-                }
-            });
-        </script>
     </body>
 </html>
