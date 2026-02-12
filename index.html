@@ -44,9 +44,13 @@
             <section class="card">
                 <h2>Points d'intéraction</h2>
                 <div class="interaction-images">
-                    <img src="images/image1.jpeg" alt="photo 1">
-                    <img src="images/image2.jpeg" alt="photo 2">
-                    <img src="images/image3.jpeg" alt="photo 3">
+                    <img src="images/image1.jpeg" alt="photo 1" onclick="openModal(this)">
+                    <img src="images/image2.jpeg" alt="photo 2" onclick="openModal(this)">
+                    <img src="images/image3.jpeg" alt="photo 3" onclick="openModal(this)">
+                </div>
+                <div id="imageModal" class="modal" onclick="closeModal()">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="modalImage">
                 </div>
             </section>
        
