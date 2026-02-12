@@ -85,11 +85,12 @@ li {
     transform 0.2s ease,
     box-shadow 0.2s ease,
     background 0.2s ease;
+  cursor: pointer;
 }
 
 .card:hover{
-  background: #f0f4ff;
-  transform: translateY(-3px);
+  background: #eef2ff;
+  transform: translateY(-5px);
   box-shadow: 0 10px 30px rgba(99, 102, 241, 0.25);
 }
 
