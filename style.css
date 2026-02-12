@@ -94,3 +94,23 @@ li {
   box-shadow: 0 10px 30px rgba(99, 102, 241, 0.25);
 }
 
+.interaction-images {
+  display: flex;           /* aligne les images sur une ligne */
+  justify-content: space-between; /* espace entre les images */
+  gap: 16px;               /* espace constant */
+  margin-top: 16px;
+}
+
+.interaction-images img {
+  width: 32%;              /* 3 images sur une ligne prennent environ 100% */
+  border-radius: 10px;     /* coins arrondis */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.interaction-images img:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+
