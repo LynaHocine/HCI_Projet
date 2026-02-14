@@ -95,16 +95,16 @@ li {
 }
 
 .interaction-images {
-  display: flex;                  /* aligne les images sur une ligne */
+  display: flex;
+  flex-wrap: wrap;               /* permet le retour à la ligne */
   justify-content: space-between; /* espace entre les images */
-  gap: 16px;                      /* espace constant */
+  gap: 16px;
   margin-top: 16px;
-  flex-wrap: wrap;                /* permet à la ligne de passer à la suivante si l'écran est petit */
 }
 
 .interaction-images img {
-  width: 23%;                      /* 4 images tiennent sur la ligne avec un petit espace */
-  border-radius: 10px;             /* coins arrondis */
+  width: 48%;                     /* deux images par ligne avec un petit espace */
+  border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   cursor: pointer;
@@ -117,7 +117,7 @@ li {
 
 /* Modal */
 .modal {
-  display: none; /* caché par défaut */
+  display: none;
   position: fixed;
   z-index: 1000;
   left: 0;
@@ -147,10 +147,10 @@ li {
   cursor: pointer;
 }
 
-/* Optionnel : clic sur l'image pour zoom */
 .interaction-images img:active {
   transform: scale(1.1);
 }
+
 
 .brainstorm-board {
   position: relative;
