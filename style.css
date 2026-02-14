@@ -175,28 +175,48 @@ li {
 /* Positionnement scattered */
 
 /* Ligne 1 */
-.p1  { top: 40px;  left: 60px;  transform: rotate(-8deg); }
-.p2  { top: 80px;  left: 280px; transform: rotate(6deg); }
-.p3  { top: 20px;  left: 520px; transform: rotate(12deg); }
-.p4  { top: 120px; left: 720px; transform: rotate(-5deg); }
+.board-1 .p1  { top: 40px;  left: 60px;  transform: rotate(-8deg); }
+.board-1 .p2  { top: 80px;  left: 280px; transform: rotate(6deg); }
+.board-1 .p3  { top: 20px;  left: 520px; transform: rotate(12deg); }
+.board-1 .p4  { top: 120px; left: 720px; transform: rotate(-5deg); }
 
 /* Ligne 2 */
-.p5  { top: 260px; left: 100px; transform: rotate(10deg); }
-.p6  { top: 320px; left: 350px; transform: rotate(-7deg); }
-.p7  { top: 250px; left: 600px; transform: rotate(5deg); }
-.p8  { top: 360px; left: 820px; transform: rotate(-12deg); }
+.board-1 .p5  { top: 260px; left: 100px; transform: rotate(10deg); }
+.board-1 .p6  { top: 320px; left: 350px; transform: rotate(-7deg); }
+.board-1 .p7  { top: 250px; left: 600px; transform: rotate(5deg); }
+.board-1 .p8  { top: 360px; left: 820px; transform: rotate(-12deg); }
 
 /* Ligne 3 */
-.p9  { top: 500px; left: 70px;  transform: rotate(8deg); }
-.p10 { top: 560px; left: 300px; transform: rotate(-6deg); }
-.p11 { top: 480px; left: 540px; transform: rotate(14deg); }
-.p12 { top: 620px; left: 760px; transform: rotate(-9deg); }
+.board-1 .p9  { top: 500px; left: 70px;  transform: rotate(8deg); }
+.board-1 .p10 { top: 560px; left: 300px; transform: rotate(-6deg); }
+.board-1 .p11 { top: 480px; left: 540px; transform: rotate(14deg); }
+.board-1 .p12 { top: 620px; left: 760px; transform: rotate(-9deg); }
 
 /* Ligne 4 */
-.p13 { top: 720px; left: 140px; transform: rotate(-4deg); }
-.p14 { top: 760px; left: 400px; transform: rotate(11deg); }
-.p15 { top: 700px; left: 640px; transform: rotate(-10deg); }
-.p16 { top: 820px; left: 880px; transform: rotate(7deg); }
+.board-1 .p13 { top: 720px; left: 140px; transform: rotate(-4deg); }
+.board-1 .p14 { top: 760px; left: 400px; transform: rotate(11deg); }
+.board-1 .p15 { top: 700px; left: 640px; transform: rotate(-10deg); }
+.board-1 .p16 { top: 820px; left: 880px; transform: rotate(7deg); }
+
+.board-2 .p17 { top: 50px;  left: 100px; transform: rotate(-6deg); }
+.board-2 .p18 { top: 90px;  left: 300px; transform: rotate(8deg); }
+.board-2 .p19 { top: 40px;  left: 500px; transform: rotate(-12deg); }
+.board-2 .p20 { top: 130px; left: 680px; transform: rotate(5deg); }
+
+.board-2 .p21 { top: 260px; left: 80px;  transform: rotate(10deg); }
+.board-2 .p22 { top: 330px; left: 260px; transform: rotate(-7deg); }
+.board-2 .p23 { top: 270px; left: 450px; transform: rotate(6deg); }
+.board-2 .p24 { top: 350px; left: 630px; transform: rotate(-9deg); }
+
+.board-2 .p25 { top: 500px; left: 120px; transform: rotate(4deg); }
+.board-2 .p26 { top: 570px; left: 300px; transform: rotate(-11deg); }
+.board-2 .p27 { top: 480px; left: 480px; transform: rotate(9deg); }
+.board-2 .p28 { top: 620px; left: 660px; transform: rotate(-5deg); }
+
+.board-2 .p29 { top: 720px; left: 90px;  transform: rotate(-8deg); }
+.board-2 .p30 { top: 780px; left: 270px; transform: rotate(12deg); }
+.board-2 .p31 { top: 700px; left: 450px; transform: rotate(-4deg); }
+.board-2 .p32 { top: 830px; left: 630px; transform: rotate(7deg); }
 
 .brainstorm-board {
   overflow-x: auto;
