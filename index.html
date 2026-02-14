@@ -44,13 +44,13 @@
             <section class="card">
                 <h2>Points d'intéraction</h2>
                 <div class="interaction-images">
-                    <img src="images/image1.jpeg" alt="photo 1">
-                    <img src="images/image2.jpeg" alt="photo 2">
-                    <img src="images/image3.jpeg" alt="photo 3">
-                    <img src="images/image4.jpeg" alt="photo 4">
+                    <img src="images/image1.jpeg" alt="photo 1" onclick="openModal(this)">
+                    <img src="images/image2.jpeg" alt="photo 2" onclick="openModal(this)">
+                    <img src="images/image3.jpeg" alt="photo 3" onclick="openModal(this)">
+                    <img src="images/image4.jpeg" alt="photo 4" onclick="openModal(this)">
                 </div>
-                <div id="imageModal" class="modal">
-                    <span class="close">&times;</span>
+                <div id="imageModal" class="modal" onclick="closeModal()">
+                    <span class="close" onclick="closeModal()">&times;</span>
                     <img class="modal-content" id="modalImage">
                 </div>
             </section>
@@ -120,5 +120,19 @@
             </section>
 
         </main>
+        <script>
+        function openModal(img) {
+        const modal = document.getElementById("imageModal");
+        const modalImg = document.getElementById("modalImage");
+        modal.style.display = "block";
+        modalImg.src = img.src;
+        }
+
+        function closeModal() {
+        const modal = document.getElementById("imageModal");
+        modal.style.display = "none";
+        }
+        </script>
+
     </body>
 </html>

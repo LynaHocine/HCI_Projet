@@ -96,14 +96,15 @@ li {
 
 .interaction-images {
   display: flex;
-  flex-wrap: wrap;               /* permet le retour à la ligne */
-  justify-content: space-between; /* espace entre les images */
-  gap: 16px;
+  flex-wrap: wrap;         /* permet de passer à la ligne suivante */
+  justify-content: space-between;
+  gap: 16px;               /* espace constant */
   margin-top: 16px;
 }
 
 .interaction-images img {
-  width: 48%;                     /* deux images par ligne avec un petit espace */
+  flex: 0 0 48%;           /* fixe largeur pour deux par ligne */
+  max-width: 48%;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -115,7 +116,6 @@ li {
   box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
-/* Modal */
 .modal {
   display: none;
   position: fixed;
@@ -145,10 +145,6 @@ li {
   font-size: 40px;
   font-weight: bold;
   cursor: pointer;
-}
-
-.interaction-images img:active {
-  transform: scale(1.1);
 }
 
 .brainstorm-board {
