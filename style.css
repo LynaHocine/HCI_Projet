@@ -144,3 +144,60 @@ li {
   font-weight: bold;
   cursor: pointer;
 }
+
+.brainstorm-board {
+  position: relative;
+  margin-top: 30px;
+  min-height: 900px; /* plus grand car 16 post-its */
+  background: #f8fafc;
+  border-radius: 12px;
+  padding: 40px;
+  overflow: hidden;
+}
+
+/* Style général */
+.postit {
+  position: absolute;
+  width: 170px;
+  border-radius: 6px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+/* Hover */
+.postit:hover {
+  transform: scale(1.15) rotate(0deg);
+  z-index: 100;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+}
+
+/* Positionnement scattered */
+
+/* Ligne 1 */
+.p1  { top: 40px;  left: 60px;  transform: rotate(-8deg); }
+.p2  { top: 80px;  left: 280px; transform: rotate(6deg); }
+.p3  { top: 20px;  left: 520px; transform: rotate(12deg); }
+.p4  { top: 120px; left: 720px; transform: rotate(-5deg); }
+
+/* Ligne 2 */
+.p5  { top: 260px; left: 100px; transform: rotate(10deg); }
+.p6  { top: 320px; left: 350px; transform: rotate(-7deg); }
+.p7  { top: 250px; left: 600px; transform: rotate(5deg); }
+.p8  { top: 360px; left: 820px; transform: rotate(-12deg); }
+
+/* Ligne 3 */
+.p9  { top: 500px; left: 70px;  transform: rotate(8deg); }
+.p10 { top: 560px; left: 300px; transform: rotate(-6deg); }
+.p11 { top: 480px; left: 540px; transform: rotate(14deg); }
+.p12 { top: 620px; left: 760px; transform: rotate(-9deg); }
+
+/* Ligne 4 */
+.p13 { top: 720px; left: 140px; transform: rotate(-4deg); }
+.p14 { top: 760px; left: 400px; transform: rotate(11deg); }
+.p15 { top: 700px; left: 640px; transform: rotate(-10deg); }
+.p16 { top: 820px; left: 880px; transform: rotate(7deg); }
+
+.brainstorm-board {
+  overflow-x: auto;
+}
