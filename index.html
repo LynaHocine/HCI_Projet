@@ -155,7 +155,9 @@
                     Votre navigateur ne supporte pas la lecture vidéo.
                 </video>
                 <br>
-                <button onclick="togglePlay('video1')" style="margin-top:10px; padding:8px 16px;">Play / Pause</button>
+                <button class="video-btn" onclick="togglePlay('video1', this)">
+                    <span class="play-icon"></span> Play
+                </button>
             </div>
 
             <!-- Prototype 2 : ShareTaManif -->
@@ -174,7 +176,9 @@
                     Votre navigateur ne supporte pas la lecture vidéo.
                 </video>
                 <br>
-                <button onclick="togglePlay('video2')" style="margin-top:10px; padding:8px 16px;">Play / Pause</button>
+                <button class="video-btn" onclick="togglePlay('video2', this)">
+                    <span class="play-icon"></span> Play
+                </button>
             </div>
         </main>
         <script>
@@ -190,14 +194,16 @@
         modal.style.display = "none";
         }
 
-        function togglePlay(videoId) {
+        function togglePlay(videoId, btn) {
             const vid = document.getElementById(videoId);
             if (vid.paused) {
                 vid.play();
+                btn.innerHTML = '<span class="pause-icon"></span> Pause';
             } else {
                 vid.pause();
+                btn.innerHTML = '<span class="play-icon"></span> Play';
             }
-            vid.muted = true; // force le muet à chaque fois
+            vid.muted = true; 
         }
         </script>
 
