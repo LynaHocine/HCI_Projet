@@ -202,7 +202,7 @@
                     Votre navigateur ne supporte pas la lecture vidéo.
                 </video>
                 <br>
-                <button class="video-btn" onclick="togglePlay('video3', this)">
+                <button class="video-btn" onclick="togglePlayWithSound('video3', this)">
                     <span class="play-icon"></span> Play
                 </button>
             </div>
@@ -230,6 +230,17 @@
                 btn.innerHTML = '<span class="play-icon"></span> Play';
             }
             vid.muted = true; 
+        }
+
+        function togglePlayWithSound(videoId, btn) {
+            const vid = document.getElementById(videoId);
+            if (vid.paused) {
+                vid.play();
+                btn.innerHTML = '<span class="pause-icon"></span> Pause';
+            } else {
+                vid.pause();
+                btn.innerHTML = '<span class="play-icon"></span> Play';
+            }
         }
         </script>
 
